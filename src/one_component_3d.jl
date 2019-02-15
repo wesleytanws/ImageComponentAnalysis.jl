@@ -62,7 +62,7 @@ function label_components(algorithm::OneComponent3D, binary_volume::AbstractArra
 end
 
 # Label 26-connected voxels in the subvolume with the labelindex.
-function label_subvolume!(algorithm, vᵢx, vᵢy, vᵢz, n₁, n₂, n₃, queue, labels, labelindex)
+function label_subvolume!(algorithm::OneComponent3D, vᵢx, vᵢy, vᵢz, n₁, n₂, n₃, queue, labels, labelindex)
 
     window_size = 0
     center = (vᵢx, vᵢy, vᵢz)

@@ -46,6 +46,7 @@ struct OneComponent2D <: ComponentLabellingAlgorithm end
 struct OneComponent3D <: ComponentLabellingAlgorithm end
 struct Generic <: ComponentLabellingAlgorithm end
 struct ContourTracing <: ComponentLabellingAlgorithm end
+struct IterativeRecursionOriginal3 <: ComponentLabellingAlgorithm end
 
 abstract type TracingAlgorithm end
 struct CostaOuter <: TracingAlgorithm end
@@ -69,6 +70,7 @@ include("one_component_3d.jl")
 include("generic_labelling.jl")
 include("separate_utility.jl")
 include("separate_components.jl")
+include("iterative_recursion_original_3.jl")
 
 export
     Boundary,
@@ -90,5 +92,6 @@ export
     Generic,
     trace_boundary,
     CostaOuter,
-    MooreInner
+    MooreInner,
+    IterativeRecursionOriginal3
 end # module

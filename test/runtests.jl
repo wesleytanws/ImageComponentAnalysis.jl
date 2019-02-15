@@ -13,4 +13,5 @@ using Test, Images, JuliaDBMeta, IndexedTables
     include("basic_topology.jl")
     include("region_ellipse.jl")
     include("separate_components.jl")
+    include("iterative_recursion_original_3.jl")
 end
